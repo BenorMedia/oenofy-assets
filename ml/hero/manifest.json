@@ -1,0 +1,19 @@
+{
+  "source": "_archive/assets/configurator-video/OENOFY_case_apertura_4K_0001-0124.mp4 (3840x2160, 24 fps, 124 frames, H.264 BT.709 limited)",
+  "pipeline": "ffmpeg zscale BT.709 limited->full RGB, lanczos, error-diffusion dither -> PNG -> sharp WebP effort 6, smart subsample",
+  "desktop": {
+    "size": "2560x1440",
+    "quality": 88,
+    "frames": 124,
+    "bytes": 18832392
+  },
+  "mobile": {
+    "size": "960x960",
+    "crop": "2160x2160 at x=840 of the 4K frame",
+    "quality": 85,
+    "step": 2,
+    "frames": 63,
+    "bytes": 3893962
+  },
+  "backdrop": "mobile-backdrop.webp: 540x960, floor bands of frame 62 stretched and blurred, behind the square on phones"
+}
